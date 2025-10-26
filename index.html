@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munger Money Mentor | Charlie Munger Philosophy App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2C3E50',
+                        secondary: '#764BA2',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-4 py-12">
+        <section class="max-w-4xl mx-auto text-center mb-16">
+            <div class="inline-flex items-center justify-center bg-primary-100 text-primary-800 rounded-full px-4 py-2 mb-4">
+                <i data-feather="dollar-sign" class="w-4 h-4 mr-2"></i>
+                <span class="text-sm font-medium">Financial Wisdom</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Channel Charlie Munger's<br>Late-Life Financial Wisdom</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">Get instant feedback on expenses and financial decisions through the lens of Charlie Munger's conservative philosophy.</p>
+            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                <a href="/app.html" class="bg-primary hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center">
+                    <i data-feather="zap" class="w-4 h-4 mr-2"></i>
+                    Launch App
+                </a>
+                <a href="#features" class="bg-white hover:bg-gray-100 border border-gray-200 text-gray-700 font-medium py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center">
+                    <i data-feather="info" class="w-4 h-4 mr-2"></i>
+                    Learn More
+                </a>
+            </div>
+        </section>
+
+        <div class="max-w-5xl mx-auto rounded-xl overflow-hidden shadow-xl mb-16">
+            <img src="http://static.photos/finance/1200x630/42" alt="Financial decision making" class="w-full h-auto">
+        </div>
+
+        <section id="features" class="max-w-5xl mx-auto mb-20">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2 text-center">How It Works</h2>
+            <p class="text-gray-500 mb-12 text-center max-w-2xl mx-auto">Apply Charlie Munger's timeless principles to your financial decisions</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-200">
+                    <div class="bg-primary-100 text-primary-800 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="edit" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Single Expense Check</h3>
+                    <p class="text-gray-600">Evaluate one-off purchases against Munger's principles with clear verdicts and rationale.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-200">
+                    <div class="bg-primary-100 text-primary-800 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="book" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Journal Mode</h3>
+                    <p class="text-gray-600">Paste your financial journal entries and automatically extract expenses for evaluation.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-200">
+                    <div class="bg-primary-100 text-primary-800 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="shield" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Munger's Guardrails</h3>
+                    <p class="text-gray-600">Avoid common pitfalls with clear principles like "Survival > Brilliance" and "Avoid debt".</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-2xl p-8 md:p-12 mb-16">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Ready to Think Like Munger?</h2>
+                <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Get instant feedback on financial decisions through the lens of Charlie Munger's conservative philosophy.</p>
+                <a href="/app.html" class="inline-flex items-center justify-center bg-primary hover:bg-primary-600 text-white font-medium py-3 px-8 rounded-lg transition duration-200 shadow-md hover:shadow-lg">
+                    <i data-feather="chevron-right" class="w-4 h-4 mr-2"></i>
+                    Start Evaluating Now
+                </a>
+            </div>
+        </section>
+
+        <section class="max-w-5xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2 text-center">Core Principles</h2>
+            <p class="text-gray-500 mb-12 text-center max-w-2xl mx-auto">The financial guardrails that guide our evaluations</p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-start">
+                        <div class="bg-primary-100 text-primary-800 flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center mr-4 mt-1">
+                            <i data-feather="heart" class="w-4 h-4"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">Survival > Brilliance</h3>
+                            <p class="text-gray-600">Avoid wipeouts at all costs. Conservative financial decisions that preserve capital are favored over high-risk, high-reward plays.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-start">
+                        <div class="bg-primary-100 text-primary-800 flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center mr-4 mt-1">
+                            <i data-feather="credit-card" class="w-4 h-4"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">Avoid Debt</h3>
+                            <p class="text-gray-600">Debt is viewed as a noose around your neck. We flag any expenses that involve borrowing, financing, or leverage.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-start">
+                        <div class="bg-primary-100 text-primary-800 flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center mr-4 mt-1">
+                            <i data-feather="clock" class="w-4 h-4"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">Time > Money</h3>
+                            <p class="text-gray-600">After 60, your remaining time becomes the most precious commodity. We evaluate how expenses affect your autonomy and time freedom.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-start">
+                        <div class="bg-primary-100 text-primary-800 flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center mr-4 mt-1">
+                            <i data-feather="eye-off" class="w-4 h-4"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">Cut Envy & Drama</h3>
+                            <p class="text-gray-600">Expenses driven by status-seeking, vanity, or keeping up with others are heavily penalized in our evaluations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
