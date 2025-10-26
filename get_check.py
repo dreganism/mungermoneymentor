@@ -1,4 +1,3 @@
-```python
 import os, json
 from typing import Dict, Any, List
 from openai import OpenAI
@@ -76,4 +75,3 @@ def check_expense_with_gpt(expense: Dict[str, Any]) -> Dict[str, Any]:
     if "principles_triggered" not in parsed or not isinstance(parsed["principles_triggered"], list):
         parsed["principles_triggered"] = []
     return parsed
-```

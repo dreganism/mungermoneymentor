@@ -1,8 +1,8 @@
 
 // Shared JavaScript functionality
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize OpenAI API key from environment if needed
-    if (!window.__OPENAI_API_KEY && process.env.OPENAI_API_KEY) {
+    // Initialize OpenAI API key from environment if available (guard for Node globals)
+    if (!window.__OPENAI_API_KEY && typeof process !== 'undefined' && process.env && process.env.OPENAI_API_KEY) {
         window.__OPENAI_API_KEY = process.env.OPENAI_API_KEY;
     }
     
